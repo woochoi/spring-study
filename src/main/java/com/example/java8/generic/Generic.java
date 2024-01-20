@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 
 
 @Slf4j
-public class generic {
+public class Generic {
     public static void main(String[] args) {
 
         /**
