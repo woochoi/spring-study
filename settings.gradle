@@ -29,6 +29,6 @@ include 'practices'
 include 'practices:mongo-chat'
 
 findProject(':practices:mongo-chat')?.name = 'mongo-chat'
-
-
+include 'practices:redis-webflux-image'
+findProject(':practices:redis-webflux-image')?.name = 'redis-webflux-image'
 

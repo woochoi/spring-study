@@ -45,6 +45,9 @@ dependencies {
 	// reactor tool
 	implementation("io.projectreactor:reactor-tools")
 
+	// reactor
+	implementation("io.projectreactor:reactor-core:_")
+
 	//developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	//developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
 

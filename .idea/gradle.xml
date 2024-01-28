@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/examples" />
             <option value="$PROJECT_DIR$/practices" />
             <option value="$PROJECT_DIR$/practices/mongo-chat" />
+            <option value="$PROJECT_DIR$/practices/redis-webflux-image" />
           </set>
         </option>
       </GradleProjectSettings>

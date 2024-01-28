@@ -8,23 +8,21 @@
 - https://www.saichoiblog.com/publisher-subscriber/
 
 
-
 ![img.png](img.png)
 
-
-
+```java
 public interface Publisher<T> {
-    void subscribe(Subscriber<? super T> var1);
+    void subscribe(Subscriber<? super T> s);
 }
 
 public interface Subscriber<T> {
-void onSubscribe(Subscription var1);
-    void onNext(T var1);
-    void onError(Throwable var1);
+    void onSubscribe(Subscription s);
+    void onNext(T t);
+    void onError(Throwable t);
     void onComplete();
 }
 
 public interface Subscription {
-    void request(long var1);
+    void request(long n);
     void cancel();
 }

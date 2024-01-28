@@ -4,6 +4,7 @@ package com.mongo;
 import com.mongo.entity.ChatDocument;
 import com.mongo.repository.ChatMongoRepository;
 import com.mongodb.client.model.changestream.OperationType;
+import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.bson.BsonValue;
 import org.bson.Document;
@@ -14,10 +15,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
 
 import java.util.Objects;
+import java.util.TimeZone;
 
 @Slf4j
 @SpringBootApplication
 public class ChatApplication implements CommandLineRunner { // implements CommandLineRunner
+
+    @PostConstruct
+    void started() {
+        TimeZone.setDefault(TimeZone.getTimeZone("Asia/Seoul"));
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(ChatApplication.class);
     }

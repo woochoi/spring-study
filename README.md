@@ -8,8 +8,6 @@ spring boot / security, webflux, nosql, kafka ...
 - 자바의 정석 기초편(2020최신) : https://www.youtube.com/playlist?list=PLW2UjW795-f6xWA2_MUhEVgPauhGl3xIp
 
 
-
-
 # Bookmark
 - spring boot
 
