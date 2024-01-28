@@ -11,6 +11,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/example" />
+            <option value="$PROJECT_DIR$/example/async-programming" />
+            <option value="$PROJECT_DIR$/examples" />
+            <option value="$PROJECT_DIR$/practices" />
+            <option value="$PROJECT_DIR$/practices/mongo-chat" />
           </set>
         </option>
       </GradleProjectSettings>

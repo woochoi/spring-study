@@ -35,6 +35,11 @@ spring boot / security, webflux, nosql, kafka ...
   - https://tussle.tistory.com/1104
 
 
+- Reactive
+  CompletableFuture
+  - https://www.youtube.com/playlist?list=PLL-4P1BOZnWwauNPsQ_Q13hVL1LHvhy30
+  - https://www.youtube.com/playlist?list=PLoeSjUxfpzh8Yo_kDQxq_USWZteA1qV6d
+
 
 - Webflux
   Mono
@@ -46,9 +51,9 @@ spring boot / security, webflux, nosql, kafka ...
   - https://yangbongsoo.tistory.com/58
   - https://velog.io/@bahar-j/Mono.defer-%EB%B6%80%EC%A0%9C-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%95%9C-Lazy%ED%95%98%EA%B2%8C-%EC%B2%98%EB%A6%AC%ED%95%98%EC%9E%90
 
-public static <T> Mono<T> defer(Supplier<? extends Mono<? extends T>> supplier) {
-  return onAssembly(new MonoDefer(supplier));
-}
+    public static <T> Mono<T> defer(Supplier<? extends Mono<? extends T>> supplier) {
+      return onAssembly(new MonoDefer(supplier));
+    }
 
 
   Mono/Flux
@@ -74,11 +79,19 @@ public static <T> Mono<T> defer(Supplier<? extends Mono<? extends T>> supplier) 
   - https://vixxcode.tistory.com/261
 
 
+
+
 - Spring Batch : https://velog.io/@kdj9878/Spring-Batch-%EB%B0%8F-Spring-Scheduler
+
+
 
 - JPA : https://putapple96.tistory.com/3
 
+
+
 - 네트워크 기초 무료 강의 : https://www.youtube.com/watch?v=dsoAkoxZ13o
+
+
 
 
 
