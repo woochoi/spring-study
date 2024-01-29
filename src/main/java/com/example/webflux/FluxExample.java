@@ -16,8 +16,7 @@ public class FluxExample {
 
 
         Flux<Integer> intFlux = Flux.just(1,2,3);
-        intFlux.map(i -> i * 2).subscribe(System.out::println````                                                                                                                                                                                                                                                                   );
-
+        intFlux.map(i -> i * 2).subscribe(System.out::println);
 
         //Flux<Integer> intFluxRange = Flux.range(1,10);
         //Flux<String> stringFlux = Flux.fromIterable(List.of("foo", "bar"));

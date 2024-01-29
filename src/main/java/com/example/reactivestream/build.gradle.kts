@@ -1,3 +1,5 @@
+package com.example.reactivestream
+
 plugins {
     id("java")
     id("org.springframework.boot")

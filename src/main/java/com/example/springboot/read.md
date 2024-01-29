@@ -1,19 +1,7 @@
 
+### 스프링 TaskScheduler
+https://pompitzz.github.io/blog/Spring/Scheduler.html#_1-%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A6%E1%84%8C%E1%85%AE%E1%86%AF%E1%84%85%E1%85%B5%E1%86%BC-%E1%84%92%E1%85%AA%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC%E1%84%92%E1%85%AA-%E1%84%86%E1%85%B5%E1%86%BE-%E1%84%89%E1%85%B5%E1%86%AF%E1%84%92%E1%85%A2%E1%86%BC
 
 
-public interface Publisher<T> {
-    void subscribe(Subscriber<? super T> var1);
-}
-
-
-public interface Subscriber<T> {
-void onSubscribe(Subscription var1);
-    void onNext(T var1);
-    void onError(Throwable var1);
-    void onComplete();
-}
-
-public interface Subscription {
-    void request(long var1);
-    void cancel();
-}
+### 개인 프로젝트
+https://blog.naver.com/senshig/222282236850
