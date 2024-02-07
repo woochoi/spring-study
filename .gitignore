@@ -72,4 +72,8 @@ generated/
 
 # Docker
 docker/
+docker/mongo/data
 
+.idea
+campusgram-practice
+study

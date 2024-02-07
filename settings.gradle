@@ -31,4 +31,7 @@ include 'practices:mongo-chat'
 findProject(':practices:mongo-chat')?.name = 'mongo-chat'
 include 'practices:redis-webflux-image'
 findProject(':practices:redis-webflux-image')?.name = 'redis-webflux-image'
+include 'spring-reactive'
+include 'spring-reactive:part1'
+findProject(':spring-reactive:part1')?.name = 'part1'
 
