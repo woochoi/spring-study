@@ -4,6 +4,8 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleJvm" value="corretto-17" />
         <option name="modules">
@@ -13,6 +15,7 @@
             <option value="$PROJECT_DIR$/example/async-programming" />
             <option value="$PROJECT_DIR$/examples" />
             <option value="$PROJECT_DIR$/practices" />
+            <option value="$PROJECT_DIR$/practices/completable-future" />
             <option value="$PROJECT_DIR$/practices/mongo-chat" />
             <option value="$PROJECT_DIR$/practices/redis-webflux-image" />
             <option value="$PROJECT_DIR$/spring-reactive" />

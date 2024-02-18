@@ -16,7 +16,7 @@ public class CompletionStageThenComposeAsyncExample {
     public static void main(String[] args)
             throws InterruptedException {
         log.info("start main");
-        CompletionStage<Integer> stage = Helper.completionStage();
+        CompletionStage<Integer> stage = Helper.completionStage(); //  CompletionStage<Integer> return 1;
         stage.thenComposeAsync(value -> {
             var next = Helper.addOne(value);
             log.info("in thenComposeAsync: {}", next);

@@ -19,6 +19,7 @@
         <module name="study.example.async-programming.main" />
         <module name="study.practices.redis-webflux-image.main" />
         <module name="study.practices.mongo-chat.main" />
+        <module name="study.practices.completable-future.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17" />
