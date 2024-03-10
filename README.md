@@ -78,19 +78,13 @@ spring boot / security, webflux, nosql, kafka ...
 
 
 
-
 - Spring Batch : https://velog.io/@kdj9878/Spring-Batch-%EB%B0%8F-Spring-Scheduler
-
 
 
 - JPA : https://putapple96.tistory.com/3
 
 
-
 - 네트워크 기초 무료 강의 : https://www.youtube.com/watch?v=dsoAkoxZ13o
-
-
-
 
 
 

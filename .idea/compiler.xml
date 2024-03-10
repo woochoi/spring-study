@@ -20,6 +20,7 @@
         <module name="study.practices.redis-webflux-image.main" />
         <module name="study.practices.mongo-chat.main" />
         <module name="study.practices.completable-future.main" />
+        <module name="study.practices.reactive-streams.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17" />

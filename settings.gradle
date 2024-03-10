@@ -33,4 +33,6 @@ include 'spring-reactive:part1'
 findProject(':spring-reactive:part1')?.name = 'part1'
 include 'practices:completable-future'
 findProject(':practices:completable-future')?.name = 'completable-future'
+include 'practices:reactive-streams'
+findProject(':practices:reactive-streams')?.name = 'reactive-streams'
 

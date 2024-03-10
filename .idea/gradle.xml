@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/practices" />
             <option value="$PROJECT_DIR$/practices/completable-future" />
             <option value="$PROJECT_DIR$/practices/mongo-chat" />
+            <option value="$PROJECT_DIR$/practices/reactive-streams" />
             <option value="$PROJECT_DIR$/practices/redis-webflux-image" />
             <option value="$PROJECT_DIR$/spring-reactive" />
             <option value="$PROJECT_DIR$/spring-reactive/part1" />
