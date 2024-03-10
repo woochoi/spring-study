@@ -16,8 +16,9 @@ public class FluxSimpleSubscribeOnExample {
         getItems().map(i -> {
                     log.info("map {}", i);
                     return i;
-                }) // CompletableFuture 의 thenApply 비스
-                .subscribeOn(Schedulers.single()) // ==  ExecutorService executorService = Executors.newSingleThreadExecutor();
+                }) // CompletableFuture 의 thenApply 와 비슷
+                // ==  ExecutorService executorService = Executors.newSingleThreadExecutor();
+                .subscribeOn(Schedulers.single())
                 .subscribe(new SimpleSubscriber<>(Integer.MAX_VALUE));
 
         log.info("end main");
