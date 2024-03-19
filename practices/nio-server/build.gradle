@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // lombok
+    annotationProcessor("org.projectlombok:lombok:_")
+    compileOnly("org.projectlombok:lombok:_")
+
+    // test
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("io.projectreactor:reactor-test")
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:_")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:_")
+
+    implementation("org.slf4j:slf4j-api:_")
+    implementation("ch.qos.logback:logback-classic:_")
+    implementation("ch.qos.logback:logback-core:_")
+
+
+    //testImplementation platform('org.junit:junit-bom:5.9.1')
+    //testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

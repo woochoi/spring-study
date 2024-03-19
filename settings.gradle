@@ -41,4 +41,6 @@ include 'practices:reactor-pattern'
 findProject(':practices:reactor-pattern')?.name = 'reactor-pattern'
 include 'practices:reactor'
 findProject(':practices:reactor')?.name = 'reactor'
+include 'practices:nio-server'
+findProject(':practices:nio-server')?.name = 'nio-server'
 
