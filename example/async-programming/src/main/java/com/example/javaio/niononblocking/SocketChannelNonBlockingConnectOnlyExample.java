@@ -12,7 +12,7 @@ public class SocketChannelNonBlockingConnectOnlyExample {
         log.info("start main");
         try (var socketChannel = SocketChannel.open()) {
             var address = new InetSocketAddress("localhost", 8080);
-            socketChannel.configureBlocking(false);
+            socketChannel.configureBlocking(false); // false : non-blocking 모드
             var connected = socketChannel.connect(address);
             assert !connected;
         }

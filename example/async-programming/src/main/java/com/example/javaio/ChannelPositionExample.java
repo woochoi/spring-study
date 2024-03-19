@@ -8,6 +8,9 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * 버퍼 위치 메서드
+ */
 @Slf4j
 public class ChannelPositionExample {
     public static void main(String[] args) throws IOException {

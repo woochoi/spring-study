@@ -4,6 +4,10 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.nio.ByteBuffer;
 
+/**
+ * Nio 에서 커널 버퍼에 직접 접근
+ *
+ */
 @Slf4j
 public class ByteBufferExample {
     public static void main(String[] args) {
