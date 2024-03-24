@@ -22,14 +22,14 @@ public class ServerSocketChannelSelectorCommentExample {
         try (var serverChannel = ServerSocketChannel.open();
              var selector = Selector.open();
         ) {
-            // serverSocketChannel을 생성하고, localhost:8080으로 바인딩
+            // serverSocketChannel 을 생성하고, localhost:8080 으로 바인딩
             var address = new InetSocketAddress("localhost", 8080);
             serverChannel.bind(address);
 
-            // serverChannel을 non-blocking으로 설정
+            // serverChannel 을 non-blocking 으로 설정
             serverChannel.configureBlocking(false);
 
-            // serverChannel의 Accept 작업을 selector에 등록
+            // serverChannel 의 Accept 작업을 selector 에 등록
             serverChannel.register(selector, SelectionKey.OP_ACCEPT);
 
             // 무한 루프를 통해서 지속적으로 채널의 작업들을 처리

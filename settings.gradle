@@ -43,4 +43,6 @@ include 'practices:reactor'
 findProject(':practices:reactor')?.name = 'reactor'
 include 'practices:nio-server'
 findProject(':practices:nio-server')?.name = 'nio-server'
+include 'practices:selector'
+findProject(':practices:selector')?.name = 'selector'
 

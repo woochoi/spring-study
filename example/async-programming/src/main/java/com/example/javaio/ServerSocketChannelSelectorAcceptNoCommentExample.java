@@ -28,6 +28,8 @@ public class ServerSocketChannelSelectorAcceptNoCommentExample {
                     if (key.isAcceptable()) {
                         var clientSocket = ((ServerSocketChannel) key.channel()).accept();
                         clientSocket.configureBlocking(false);
+
+                        // ServerChannel 의 Accept 작업을 selector 에 등록
                         clientSocket.register(selector, SelectionKey.OP_READ);
                     }
                     if (key.isReadable()) {

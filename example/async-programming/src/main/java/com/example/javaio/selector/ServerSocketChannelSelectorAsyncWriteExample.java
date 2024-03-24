@@ -30,7 +30,7 @@ public class ServerSocketChannelSelectorAsyncWriteExample {
         ) {
             var address = new InetSocketAddress("localhost", 8080);
             serverChannel.bind(address);
-            // serverChannel을 non-blocking으로 설정
+            // serverChannel 을 non-blocking 으로 설정
             serverChannel.configureBlocking(false);
             serverChannel.register(selector, SelectionKey.OP_ACCEPT);
 
@@ -42,21 +42,21 @@ public class ServerSocketChannelSelectorAsyncWriteExample {
                 for (var key : selectedKeys) {
                     if (!key.isValid()) return;
 
-                    if (key.isAcceptable()) { // event가 ACCEPT 라면
-                        // accept를 통해서 clientSocket에 접근
+                    if (key.isAcceptable()) { // event 가 ACCEPT 라면
+                        // accept 를 통해서 clientSocket 에 접근
                         var clientSocket = ((ServerSocketChannel) key.channel()).accept();
 
-                        // clientSocket을 non-blocking으로 설정
+                        // clientSocket 을 non-blocking 으로 설정
                         clientSocket.configureBlocking(false);
 
-                        // clientSocket을 selector에 등록
+                        // ServerChannel 의 Accept 작업을 selector 에 등록
                         clientSocket.register(selector, SelectionKey.OP_READ);
                     }
-                    if (key.isReadable()) { // event가 READ 라면
+                    if (key.isReadable()) { // event 가 READ 라면
                         var clientSocket = (SocketChannel) key.channel();
                         var requestBody = getRequestBody(clientSocket);
 
-                        // clientSocket에 데이터를 씀
+                        // clientSocket 에 데이터를 씀
                         sendResponse(clientSocket, requestBody);
                         count++;
                     }

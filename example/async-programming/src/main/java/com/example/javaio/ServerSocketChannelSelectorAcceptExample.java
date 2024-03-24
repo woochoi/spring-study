@@ -23,8 +23,9 @@ public class ServerSocketChannelSelectorAcceptExample {
 
             var address = new InetSocketAddress("localhost", 8080);
             serverChannel.bind(address);
-            // serverChannel을 non-blocking으로 설정
+            // serverChannel 을 non-blocking 으로 설정
             serverChannel.configureBlocking(false);
+            // ServerChannel 의 Accept 작업을 selector 에 등록
             serverChannel.register(selector, SelectionKey.OP_ACCEPT);
 
             while (true) {
