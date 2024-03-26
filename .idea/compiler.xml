@@ -20,6 +20,8 @@
         <module name="study.practices.nio-server.main" />
         <module name="study.practices.reactor-pattern.main" />
         <module name="study.practices.mongo-chat.main" />
+        <module name="study.example.spring-webflux.main" />
+        <module name="study.practices.proactor-pattern.main" />
         <module name="study.practices.redis-webflux-image.main" />
         <module name="study.practices.reactor.main" />
         <module name="study.practices.selector.main" />

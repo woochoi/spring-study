@@ -13,11 +13,13 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/example" />
             <option value="$PROJECT_DIR$/example/async-programming" />
+            <option value="$PROJECT_DIR$/example/spring-webflux" />
             <option value="$PROJECT_DIR$/examples" />
             <option value="$PROJECT_DIR$/practices" />
             <option value="$PROJECT_DIR$/practices/completable-future" />
             <option value="$PROJECT_DIR$/practices/mongo-chat" />
             <option value="$PROJECT_DIR$/practices/nio-server" />
+            <option value="$PROJECT_DIR$/practices/proactor-pattern" />
             <option value="$PROJECT_DIR$/practices/reactive-streams" />
             <option value="$PROJECT_DIR$/practices/reactor" />
             <option value="$PROJECT_DIR$/practices/reactor-pattern" />

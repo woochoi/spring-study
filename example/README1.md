@@ -1,4 +1,4 @@
-- ![img_2.png](img_2.png)
+- ![img_2.png](images/img_2.png)
 - Project reactor
 - Spring reactor
 - Mono 와 Flux publisher 제공
@@ -85,7 +85,7 @@
 - next()는 다음 onNext 시그널에 전달되는 아이템을 단일 Mono 로 전달한다.
 
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 
 # Flux 생성 (FluxSink)

@@ -1,5 +1,5 @@
 
-![img.png](img.png)
+![img.png](images/img.png)
 
 # Reactive Streams
 1. Callee는 Caller에게 응답이 아닌 publisher를 제공한다.
@@ -12,7 +12,7 @@
 
 
 # Reactive Stream 구조
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 - 데이터 혹은 이벤트를 제공하는 Publisher
 - 데이터 혹은 이벤트를 제공받는 Subscriber
 - 데이터 흐름을 조절하는 Subscription
@@ -32,8 +32,8 @@
 
 
 * Selector
-* ![img_2.png](img_2.png)
-* ![img_6.png](img_6.png)
+* ![img_2.png](images/img_2.png)
+* ![img_6.png](images/img_6.png)
 
 * SelectorProvider 종류
 * Selector 등록 (register)
@@ -42,15 +42,15 @@
 * Selector 이벤트 타입 4가지
  
 * Selector 에 Accept 작업 등록
-* ![img_3.png](img_3.png)
+* ![img_3.png](images/img_3.png)
 
 * SelectedKey
 - 등록했던 channel 과 selector, 이벤트 타입을 포함
 - channel 의 어떤 이벤트가 준비되었는지 체크 가능
-* ![img_4.png](img_4.png)
+* ![img_4.png](images/img_4.png)
 
 * I/O Multiplexing
-* ![img_5.png](img_5.png)
+* ![img_5.png](images/img_5.png)
 - 두 개 이상의 Channel 을 하나의 Selector 로 통합하는 과정
 - Selector 를 이용해서 I/O Multiplexing 구현
 - /spring-study/practices/selector/src/main/java/org/example/SelectorMultiServer.java
@@ -72,13 +72,16 @@
 - EventHandler 의 처리가 Reactor 에 영향을 주지 않아야 한다 --> EventHandler 에 별도의 쓰레드 실행
 
 * Reactor Pattern
-* ![img_7.png](img_7.png)
+* ![img_7.png](images/img_7.png)
 - Reactor, Selector, Acceptor, EventHandler 구현체로 구성
 - Acceptor : accept 이벤트에만 집중
 - EventHandler : read 이벤트에만 집중
 
 
 * HTTP 응답 구조
-* ![img_8.png](img_8.png)
+* ![img_8.png](images/img_8.png)
 
+
+* Reactor 의 문제점
+* ![img_9.png](images/img_9.png)
 

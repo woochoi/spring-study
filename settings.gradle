@@ -45,4 +45,8 @@ include 'practices:nio-server'
 findProject(':practices:nio-server')?.name = 'nio-server'
 include 'practices:selector'
 findProject(':practices:selector')?.name = 'selector'
+include 'practices:proactor-pattern'
+findProject(':practices:proactor-pattern')?.name = 'proactor-pattern'
+include 'example:spring-webflux'
+findProject(':example:spring-webflux')?.name = 'spring-webflux'
 

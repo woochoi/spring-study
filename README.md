@@ -1,12 +1,10 @@
 # spring-study
 spring boot / security, webflux, nosql, kafka ...
 
-
 # 자바의 정석 3판
 - url : http://www.codechobo.com/main
 - 소스파일 다운로드 (java 연습문제(약200문제)) : https://github.com/castello/javajungsuk3
 - 자바의 정석 기초편(2020최신) : https://www.youtube.com/playlist?list=PLW2UjW795-f6xWA2_MUhEVgPauhGl3xIp
-
 
 # Bookmark
 - spring boot
@@ -32,7 +30,6 @@ spring boot / security, webflux, nosql, kafka ...
   Cache
   - https://tussle.tistory.com/1104
 
-
 - Reactive
   CompletableFuture
   - https://www.youtube.com/playlist?list=PLL-4P1BOZnWwauNPsQ_Q13hVL1LHvhy30
@@ -53,7 +50,6 @@ spring boot / security, webflux, nosql, kafka ...
       return onAssembly(new MonoDefer(supplier));
     }
 
-
   Mono/Flux
   - https://lovon.tistory.com/35
   - https://colevelup.tistory.com/38
@@ -67,7 +63,6 @@ spring boot / security, webflux, nosql, kafka ...
   - https://hwan33.tistory.com/31
   - https://yarisong.tistory.com/48
 
-
 - @Scheduled
   - https://rooted.tistory.com/12
   - https://dev-coco.tistory.com/176
@@ -76,21 +71,30 @@ spring boot / security, webflux, nosql, kafka ...
   - https://velog.io/@max9106/Spring-Scheduling
   - https://vixxcode.tistory.com/261
 
-
-
 - Spring Batch : https://velog.io/@kdj9878/Spring-Batch-%EB%B0%8F-Spring-Scheduler
 
-
 - JPA : https://putapple96.tistory.com/3
-
 
 - 네트워크 기초 무료 강의 : https://www.youtube.com/watch?v=dsoAkoxZ13o
 
 
+---------------------------------------------
+
+* Spring Reactive Stack
+* ![img.png](images/img.png)
+
+* ![img_1.png](images/img_1.png)
+
+* ![img_2.png](images/img_2.png)
+
+* ![img_3.png](images/img_3.png)
+
+---------------------------------------------
+
+
 
 Mono.defer(() -> {
-
-.retryWhen(
+  .retryWhen(
 }).cache();
 
 .then
@@ -119,5 +123,6 @@ doOnTerminate
 subscribe
 thenReturn
 ).subscribeOn(Schedulers.boundedElastic()); // 블로킹 함수이므로 무조건 bounded elastic
+
 
 
